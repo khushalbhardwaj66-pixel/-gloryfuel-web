@@ -1,0 +1,331 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Global Theme Overrides - Removing All Dark/Black Text */
+*,
+p,
+span,
+div,
+label,
+li,
+a,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+
+body {
+  color: #FFFFFF !important;
+}
+
+/* Secondary/De-emphasized text */
+.text-gray-400,
+.text-gray-500,
+.text-gray-600,
+.ant-form-item-extra,
+.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Ant Design Specifics */
+.ant-btn {
+  color: #FFFFFF !important;
+}
+
+.ant-btn-default {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-btn-default:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #4F46E5 !important;
+}
+
+.ant-form-item-label>label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #4F46E5 !important;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Ant Design overrides for Dark Theme Visibility */
+.ant-card,
+.ant-list,
+.ant-table,
+.ant-modal-content,
+.ant-drawer-content,
+.ant-popover-inner,
+.ant-dropdown-menu,
+.ant-notification-notice,
+.ant-message-notice-content {
+  background-color: rgba(30, 41, 59, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: transparent !important;
+}
+
+.ant-card-head-title {
+  color: #FFFFFF !important;
+}
+
+.ant-table-thead>tr>th {
+  background: rgba(15, 23, 42, 0.8) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-table-tbody>tr>td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.ant-table-row:hover>td {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.ant-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Inputs and Forms */
+.ant-input,
+.ant-input-password,
+.ant-input-affix-wrapper,
+.ant-picker,
+.ant-select-selector,
+.ant-input-number,
+.ant-input-password .ant-input,
+.ant-input-textarea-show-count::after,
+.ant-input-textarea {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+}
+
+.ant-input::placeholder,
+.ant-input-password input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Pagination */
+.ant-pagination-item {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-pagination-item a {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #4F46E5 !important;
+  background: #4F46E5 !important;
+}
+
+.ant-pagination-item-active a {
+  color: #FFFFFF !important;
+}
+
+/* Typography and Misc */
+.ant-typography,
+.ant-statistic-title,
+.ant-statistic-content {
+  color: #FFFFFF !important;
+}
+
+.ant-empty-description {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Divider */
+.ant-divider {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Modals and Overlays */
+.ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-modal-title {
+  color: #FFFFFF !important;
+}
+
+.ant-modal-close {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ant-modal-close:hover {
+  color: #FFFFFF !important;
+}
+
+/* Ant Layout */
+.ant-layout {
+  background: #000000;
+}
+
+/* Custom utility classes */
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Liquid Glass Buttons */
+.btn-liquid {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-liquid:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+
+
+.btn-liquid-primary {
+  background: rgba(79, 70, 229, 0.6);
+  /* Indigo base */
+  border: 1px solid rgba(165, 180, 252, 0.3);
+}
+
+.btn-liquid-primary:hover {
+  background: rgba(79, 70, 229, 0.8);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Performance & Smoothness Upgrades */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hardware Acceleration for Ultra-Smooth Transitions */
+.animate-smooth {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Glassmorphism Optimization */
+.glass-effect {
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Premium Mobile Scaling */
+@media (max-width: 768px) {
+  .container-custom {
+    padding: 0 1.5rem;
+  }
+  
+  h1 { font-size: 2.5rem !important; }
+  .ant-card { border-radius: 1.5rem !important; }
+}
